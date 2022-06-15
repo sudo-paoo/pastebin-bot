@@ -54,6 +54,7 @@ def text(message, title, expire):
     'api_dev_key':key,
     'api_paste_code':text,
     'api_paste_expire_date': expiry,
+    'api_paste_name': title,
     'api_user_key': None
     }
     r = requests.post("https://pastebin.com/api/api_post.php", data=data)
